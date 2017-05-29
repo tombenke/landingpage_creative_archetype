@@ -38,16 +38,16 @@ that you may give, or simple press `Enter` in case you are satisfied with the de
 After all the questions answered, the project will be generated.
 The project has the following structure:
 
-├── dist
-└── src
-    ├── css
-    ├── img
-    │   └── portfolio
-    ├── js
-    ├── less
-    ├── md
-    ├── partials
-    └── templates
+    ├── dist
+    └── src
+        ├── css
+        ├── img
+        │   └── portfolio
+        ├── js
+        ├── less
+        ├── md
+        ├── partials
+        └── templates
 
 The `src` folder contains the source files.
 The additional vendor files will be copied from the corresponding node modules after installation.
