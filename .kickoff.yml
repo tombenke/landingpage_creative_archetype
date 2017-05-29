@@ -1,0 +1,114 @@
+# This is a configuration file for the kickoff utility
+description: |
+    This is a project archetype for a single page website.
+    New projects can be generated from this archetype by the
+    [kickoff](https://github.com/tombenke/kickoff) utility.
+
+welcome: >
+
+    You are generating a single page website using the startbootstrap-creative template.
+
+postscript: >
+
+    Next steps:
+
+    1. Install the npm modules required by the newly generated application:
+
+           cd <dest-folder>
+           npm install
+
+    2. Edit the template and the parameters according to your needs:
+
+        - src/templates/index.html
+        - src/parameters.json
+
+    3. Change the images under the `src/img` folder.
+
+    4. To create the dist package, run either:
+
+           npm run build
+
+       or
+
+           npm run watch
+
+questions:
+    # A question object is a hash containing question related values:
+    - 
+        # type: (String)
+        # Type of the prompt.
+        # Defaults: input - Possible values: input, confirm, list
+        type: input
+
+        # name: (String)
+        # The name to use when storing the answer in the answers' hash.
+        name: project_name
+
+        # message: (String)
+        # The question to print.
+        message: The name of the project
+
+        # default: (String|Number|Array)
+        # Default value(s) to use if nothing is entered.
+        default: mysite
+
+    -
+        type: input
+        name: project_description
+        message: The short description of the project
+        default: This is my single page website.
+
+    -
+        type: input
+        name: contact_email 
+        message: The contact email address
+        default: contact@mydomain.com
+
+    -
+        type: input
+        name: contact_phone
+        message: The contact phone number
+        default: "(+??) ?????-???"
+
+    -
+        type: input
+        name: author_full_name
+        message: The full name of the author
+        default: Anonymous
+
+    -
+        type: input
+        name: author_email
+        message: The email address of the author
+        default: anonymous@some-domain.com
+
+    -
+        type: input
+        name: author_github_account
+        message: The github account (username) of the author
+        default: anonymous
+
+    -
+        type: input
+        name: page_title
+        message: The title of the page
+        default: My Site
+
+    -
+        type: input
+        name: home_heading
+        message: The Home Heading text
+        default: The Home-Heading above the UVP
+
+    -
+        type: input
+        name: uvp
+        message: The Unique Value Proposition
+        default: This is the UVP, you can define it later
+
+
+converters:
+    handlebars:
+        - package.json
+        - src/parameters.json
+        - src/md/uvp.md

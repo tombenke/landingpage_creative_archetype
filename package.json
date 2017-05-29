@@ -1,0 +1,41 @@
+{
+  "name": "{{project_name}}",
+  "description": "{{project_description}}",
+  "title": "{{title}}",
+  "version": "1.0.0",
+  "author": {
+    "name": "{{author_full_name}}",
+    "email": "{{author_email}}"
+  },
+  "bugs": {
+    "url": "https://github.com/{{author_github_account}}/{{appname}}/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/{{author_github_account}}/{{project_name}}/LICENSE"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.13.0",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^3.1.0",
+    "gulp-markdown": "^1.2.0",
+    "gulp-mustache": "^2.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^1.11.3",
+    "magnific-popup": "^1.1.0",
+    "scrollreveal": "^3.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/{{author_github_account}}/{{project_name}}.git"
+  },
+  "scripts": {
+      "build": "node_modules/gulp/bin/gulp.js",
+      "watch": "node_modules/gulp/bin/gulp.js watch"
+  }
+}

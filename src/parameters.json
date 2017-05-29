@@ -1,0 +1,41 @@
+{
+    "author": "{{author_github_account}}",
+    "title": "{{page_title}}",
+    "homeHeading": "{{home_heading}}",
+    "uvp": "{{uvp}}",
+    "about": {
+        "heading": "We've got what you need!",
+        "text": "This section is about us, and about our core services..."
+    },
+    "services": [
+        {
+            "icon": "fa-diamond",
+            "heading": "Service 1.",
+            "text": "Description of the service..."
+        },
+        {
+            "icon": "fa-newspaper-o",
+            "heading": "Service 2.",
+            "text": "Description of the service..."
+        },
+        {
+            "icon": "fa-paper-plane",
+            "heading": "Service 3.",
+            "text": "Description of the service..."
+        },
+        {
+            "icon": "fa-heart",
+            "heading": "Service 4.",
+            "text": "Description of the service..."
+        }
+    ],
+    "portfolio": {
+        "heading": "Select from our portfolio...",
+        "callToAction": "Start Now!"
+    },
+    "contact" : {
+        "text": "Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!",
+        "mail": "{{contact_email}}",
+        "phone": "{{contact_phone}}"
+    }
+}
