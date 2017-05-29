@@ -15,7 +15,7 @@ You must have [Node.js](https://nodejs.org/en/) and the [kickoff](http://tombenk
 
 You can create a new project with the following command:
 
-    kickoff -f tombenke/landingpage_creative_archetype -d new_project_name
+    kickoff -s tombenke/landingpage_creative_archetype -d new_project_name
 
 The utility will download the project template from GitHub, then asks some qouestions,
 that you may give, or simple press `Enter` in case you are satisfied with the default answers.
@@ -63,6 +63,8 @@ The `src/img` folder contains the sample images, that you should replace with yo
 The `src/less` folder contains the [`less`](http://lesscss.org/) files, that you may customize.
 Especially the is important, [`src/less/variables.less`](src/less/variables.less) which contains the most relevant syling parameters.
 
+### Create and modify the content and the styles
+
 You can do the following steps:
 
 1. Install the npm modules required by the newly generated application:
@@ -89,8 +91,11 @@ The `npm run watch` uses the [browser-sync](https://www.browsersync.io/) utility
 With this command, you can immediately view the results in a browser, that will be automatically refreshed,
 in case you modify any of the source content, can be found under the [`src`](src/) directory.
 
+### Deploy the final results
+
 The final results will be written into the `dist` folder.
 You can copy the whole content to the final place of deployment when you are ready.
+
 
 ## References
 - [Creative](http://startbootstrap.com/template-overviews/creative/)
